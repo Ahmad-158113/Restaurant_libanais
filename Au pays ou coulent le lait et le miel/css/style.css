@@ -1,0 +1,405 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f1ea;
+    color:#333;
+}
+
+/* HEADER */
+
+header{
+    background-image:url("../ressources/images/header.jpg");
+    background-size:100% auto;
+    background-position:center top;
+    background-repeat:no-repeat;
+    height:400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
+}
+
+header h1{
+    color:white;
+    font-size:55px;
+    font-weight:bold;
+    text-shadow:4px 4px 10px rgba(0,0,0,0.8);
+    white-space:nowrap;
+}
+
+/* NAV */
+
+nav{
+    background:#d4a373;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav li{
+    flex:1;
+}
+
+nav a{
+    display:block;
+    padding:15px;
+    text-align:center;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:#7b1e1e;
+}
+
+/* BASE */
+
+main{
+    padding:20px;
+}
+
+section{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+}
+
+h2,
+.titre-menu,
+.titre-section{
+    background:#d4a373;
+    color:white;
+    display:inline-block;
+    padding:20px 40px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    font-size:45px;
+    margin:40px auto;
+}
+
+h3{
+    color:#7b1e1e;
+    font-size:28px;
+    margin:40px 0 20px 0;
+    text-align:center;
+}
+
+h4{
+    background:#d4a373;
+    color:white;
+    display:inline-block;
+    padding:20px 30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+p{
+    margin-bottom:15px;
+}
+
+img{
+    border-radius:10px;
+    margin-top:20px;
+}
+
+/* ACCUEIL */
+
+.accueil-contenu{
+    display:flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    gap:30px;
+    margin-bottom:30px;
+}
+
+.image-restaurant{
+    width:500px;
+    height:420px;
+    object-fit:cover;
+    border-radius:5px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.35);
+}
+
+.image-histoire{
+    width:1200px;
+    height:450px;
+    object-fit:contain;
+    margin-left:200px;
+}
+
+/* ARTISANAT */
+
+.bloc-artisanat{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    margin-top:50px;
+}
+
+.bloc-artisanat img{
+    width:600px;
+    height:auto;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.25);
+}
+
+.texte-artisanat{
+    flex:1;
+    text-align:left;
+}
+
+.texte-artisanat p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+/* PAYSAGES ACCUEIL */
+
+.bloc-paysage{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.bloc-paysage img{
+    width:520px;
+    height:470px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.texte-paysage{
+    max-width:300px;
+    text-align:center;
+    background:#d4a373;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.texte-paysage p{
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    line-height:1.8;
+    margin:0;
+}
+
+/* MENU */
+
+.image-principale{
+    display:block;
+    width:100%;
+    max-width:1100px;
+    margin:30px auto;
+    border-radius:15px;
+}
+
+.cartes-plats{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:20px;
+    margin-top:20px;
+}
+
+.carte{
+    background:#f4f1ea;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.carte img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.carte h3{
+    background:none;
+    box-shadow:none;
+    padding:0;
+    border-radius:0;
+    color:#7b1e1e;
+    font-size:28px;
+    margin:15px 0 10px 0;
+}
+
+.prix{
+    margin-top:10px;
+    font-weight:bold;
+    color:#7b1e1e;
+    font-size:18px;
+}
+
+/* GALERIE */
+
+.texte-galerie{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.image-salle{
+    width:80%;
+    max-width:1000px;
+    height:500px;
+    object-fit:cover;
+    display:block;
+    margin:0 auto 50px auto;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+.galerie-images{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:25px;
+    margin-top:20px;
+    align-items:start;
+}
+
+.galerie-images img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    object-position:center bottom;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.25);
+    transition:0.3s;
+}
+
+.galerie-images img:hover{
+    transform:scale(1.03);
+}
+
+.galerie-images .image-speciale{
+    object-position:center 80%;
+}
+
+.bloc-image{
+    background:white;
+    padding:15px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    text-align:center;
+}
+
+.bloc-image p{
+    margin-top:15px;
+    font-size:17px;
+    line-height:1.5;
+}
+
+.galerie-images .bloc-image:first-child{
+    padding-bottom:40px;
+}
+
+/* CONTACT */
+
+form p{
+    margin-bottom:15px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+}
+
+button{
+    background:#7b1e1e;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#5c1515;
+}
+
+/* FOOTER */
+
+footer{
+    background:#7b1e1e;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:1024px){
+
+    .cartes-plats{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .galerie-images{
+        grid-template-columns:1fr;
+    }
+
+    .accueil-contenu,
+    .bloc-artisanat{
+        flex-direction:column;
+    }
+
+    .image-restaurant,
+    .image-histoire,
+    .bloc-artisanat img{
+        width:100%;
+        margin-left:0;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    nav ul{
+        flex-direction:column;
+    }
+
+    header h1{
+        font-size:35px;
+    }
+
+    h2,
+    .titre-menu,
+    .titre-section{
+        font-size:32px;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .cartes-plats{
+        grid-template-columns:1fr;
+    }
+
+    .image-salle{
+        width:100%;
+        height:auto;
+    }
+
+    .bloc-paysage img{
+        width:100%;
+        height:auto;
+    }
+}
